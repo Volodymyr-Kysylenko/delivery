@@ -1,0 +1,64 @@
+.order-item {
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1fr 4fr;
+    margin: 1rem;
+    height: 140px;
+    background-color: #fff;
+
+    .order-item-image {
+        height: inherit;
+
+        img {
+            height: inherit;
+        }
+    }
+
+    .order-item-control {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+
+        .order-item-name {
+            font-weight: 600;
+        }
+
+        .order-item-amount {
+
+            .order-item-amount-btn {
+                width: 2rem;
+                height: 2rem;
+                margin: 4px;
+                border-radius: 100%;
+                border: 1px solid #dedede;
+                cursor: pointer;
+            }
+
+            .order-item-amount-input {
+                height: 2rem;
+                font-size: 1rem;
+                text-align: center;
+                border: 1px solid #dedede;
+
+                &[type=number]::-webkit-inner-spin-button {
+                    display: none;
+                  }
+
+                &:focus-visible{
+                    outline: unset;
+                    border: 1px solid #000;
+                }
+            }
+        }
+
+        .order-item-delete-btn {
+
+            button {
+                padding: 12px;
+                border: 1px solid #dedede;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

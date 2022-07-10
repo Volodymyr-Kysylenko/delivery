@@ -1,0 +1,55 @@
+.history {
+    margin: 20px;
+
+    .history-search {
+
+        .history-search-email, .history-search-number {
+            height: 1rem;
+            width: 200px;
+            margin-right: 8px;
+            padding: 8px;
+            border: 1px solid #dedede;
+            border-radius: 0;
+
+            &:focus-visible {
+                border: 1px solid #000;
+                border-radius: 0;
+                outline: unset;
+            }
+        }
+
+        .history-search-number[type=number]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+        
+        .history-search-btn {
+            width: 200px;
+            padding: 8px;
+            border: 1px solid #dedede;
+            border-radius: 0;
+            cursor: pointer;
+            background-color: #dedede;
+
+            &:active{
+                background-color: #cecece;
+            }
+        }
+    }
+
+    .history-title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .history-desc {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .history-search-not-found {
+        text-align: center;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+}

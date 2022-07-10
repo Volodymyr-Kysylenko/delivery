@@ -1,0 +1,59 @@
+.divider {
+    margin: 20px;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1fr 3fr;
+    height: 72vh;
+}
+
+.order-form {
+    padding: 2rem;
+    text-align: left;
+    background-color: #fff;
+
+    .order-form-title {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        font-weight: 500;
+        text-align: left;
+    }
+
+    input {
+        background-color: #e3e3e3;
+        margin: 8px 0 22px;
+        width: 100%;
+        height: 2.2rem;
+        border: 1px solid #dedede;
+        padding-left: 8px;
+
+        &:focus-visible{
+            border: 1px solid #000;
+            border-radius: 0;
+            outline: unset;
+        }
+    }
+}
+
+.order-list {
+    background-color: #e3e3e3;
+    padding: 2rem;
+    overflow-y: scroll;
+}
+
+.order-submit {
+    padding: 2rem;
+    text-align: right;
+
+    button {
+        margin-left: 4rem;
+        padding: 12px;
+        background-color: #dedede;
+        border: unset;
+        cursor: pointer;
+    }
+
+}
