@@ -16,7 +16,7 @@
 
     .order-item-control {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 1fr 3fr 1fr 1fr;
         align-items: center;
 
         .order-item-name {
@@ -24,6 +24,7 @@
         }
 
         .order-item-amount {
+            text-align: center;
 
             .order-item-amount-btn {
                 width: 2rem;
@@ -49,6 +50,10 @@
                     border: 1px solid #000;
                 }
             }
+        }
+        
+        .order-item-price {
+            text-align: left;
         }
 
         .order-item-delete-btn {

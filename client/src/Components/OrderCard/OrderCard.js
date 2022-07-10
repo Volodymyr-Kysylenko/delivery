@@ -64,7 +64,7 @@ function OrderCard(props) {
                         <button className='order-item-amount-btn' onClick={e => incAmount(e)}>+</button>
                     </label>
                 </div>
-                <div>Price: {((+props.price * 100) * + amount) / 100}$</div>
+                <div className='order-item-price'>Price: {((+props.price * 100) * + amount) / 100}$</div>
                 <div className='order-item-delete-btn'>
                     <button id={props.id} onClick={(e) => { props.updateData(e.target.id) }}>Delete</button>
                 </div>
